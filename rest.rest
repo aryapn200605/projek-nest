@@ -1,0 +1,25 @@
+POST http://192.168.18.27:9001/api/resource/POS%20Invoice
+Accept: application/json
+Content-Type: application/json
+Authorization: token 31ca29c75474f1d:24273c0bc0708f9
+
+{
+  "doctype": "POS Invoice",
+  "naming_series": "20230713.YYYY.-",
+  "customer": "Putra",
+  "posting_date": "2023-07-13",
+  "company": "Teras Nusantara 88",
+  "items": [
+    {
+      "item_code": "ES BATU",
+      "qty": "1",
+      "rate": 1000
+    }
+  ],
+  "payments": [
+    {
+      "mode_of_payment": "Cash",
+      "amount": 1000
+    }
+  ]
+}

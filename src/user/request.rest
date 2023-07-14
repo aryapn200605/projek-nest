@@ -1,0 +1,28 @@
+@url = http://localhost:4000/user
+@id = 5f474c0c-b479-44ea-ab32-bcc6fdb3080c
+
+GET {{url}}
+
+###
+GET {{url}}/{{id}}
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "email": "arya2@gmail.com",
+    "name": "Arya Putra Nugroho"
+}
+
+###
+PATCH {{url}}/{{id}}
+Content-Type: application/json
+
+{
+    "email": "halo@gmail.com",
+    "name": "Arya2"
+}
+
+###
+DELETE {{url}}/{{id}}
